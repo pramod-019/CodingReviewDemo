@@ -6,7 +6,7 @@
      System.out.println("RemoteTvControl instance");
     }
    // Create the instance of class with synchronized method.
-    public static synchronized RemoteTvControl gRemoteTvControl(){
+    public static synchronized RemoteTvControl gRemoteTvControl(){// lazy instance
          if(obj == null){
             obj = new RemoteTvControl(); // It will be created at request time
          }
