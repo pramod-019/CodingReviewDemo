@@ -1,15 +1,15 @@
 
- class RemoteTvControl {
-    private static RemoteTvControl obj;
+ class RemoteControlTv {
+    private static RemoteControlTv obj;
 
-    private RemoteTvControl(){
+    private RemoteControlTv(){
      System.out.println("RemoteTvControl instance");
     }
    // Create the instance of class with synchronized method.
-    public static synchronized RemoteTvControl gRemoteTvControl(){
+    public static synchronized RemoteControlTv gRemoteTvControl(){
           // lazy instantiation-> it will created when request time.
          if(obj == null){
-            obj = new RemoteTvControl(); // It will be created at request time
+            obj = new RemoteControlTv(); // It will be created at request time
          }
         return obj;
     } 
@@ -35,7 +35,7 @@
 class RemoteControl{
 
     public static void main(String[] args){
-        RemoteTvControl sLazyInstance = RemoteTvControl.gRemoteTvControl();
+        RemoteControlTv sLazyInstance = RemoteControlTv.gRemoteTvControl();
         sLazyInstance.getSetUpBoxON();
         sLazyInstance.getTvON();
         try{
