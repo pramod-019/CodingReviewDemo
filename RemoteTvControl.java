@@ -12,7 +12,7 @@
          }
         return obj;
     } 
-
+     // tv on by remote control
     public void getTvON(){
         System.out.println("TV IS TURNS ON");
     }
