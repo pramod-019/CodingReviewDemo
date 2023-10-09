@@ -20,11 +20,11 @@ public static SingletonDoubleCheckedLocker singleton;
  }
 
  public void getUserName(){
-    System.out.println("Name is -> Pramod Rai");
+    System.out.println("User Name is -> Pramod Rai");
 }
 
  public void getUserAge(){
-    System.out.println("Age is -> 29");
+    System.out.println("User Age is -> 29");
 }
 
 }
