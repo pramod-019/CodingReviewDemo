@@ -12,3 +12,4 @@
 ##6th commit
 ##4 days ago
 ##SingletonLazyInstance.java
+##factory emthod design pattern
